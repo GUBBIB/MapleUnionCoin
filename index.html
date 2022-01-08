@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="javascripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <title>메이플 유니온 코인</title>
+</head>
+<body>
+    <h1>유니온 코인 계산기</h1>
+    <h3 class=h3_center>계산 공식은 <b class=brown_color>전투력 * 8.64 / 10,000,000</b> 을 사용했습니다.</h3>
+    
+    <div id="inputDiv">
+        <input type="text" id="input" maxlength="30" placeholder="전투력을 입력하세요">
+        <input type="button" id="Btn" value="계산" onclick="print()">
+    </div>
+    <div id="result"></div>
+
+    <div style="margin-top:20px;"></div>
+
+    <table width="800px" height="70px">
+        <caption class="subTitle">유니온 코인 최대 저장량표</caption>
+        <tr>
+            <th>노비스</th>
+            <th>베테랑</th>
+            <th>마스터</th>
+            <th>그랜드마스터</th>
+        </tr>
+        <tr class="even">
+            <td>200</td>
+            <td>300</td>
+            <td>500</td>
+            <td>700</td>
+        </tr>
+    </table>
+    <div style="margin-top:20px;"></div>
+
+    <table width="800px" height="1500px">
+        <caption class="subTitle">유니온 전투력별 코인수급표</caption>
+        <tr>
+            <th>전투력(단위 : 만)</th>
+            <th>1일당 코인 개수</th>
+            <th>7일당 코인 개수</th>
+        </tr>
+        <tr class="even">
+            <td>1000</td>
+            <td>8</td>
+            <td>56</td>
+        </tr>
+        <tr>
+            <td>2000</td>
+            <td>17</td>
+            <td>119</td>
+        </tr>
+        <tr class="even">
+            <td>3000</td>
+            <td>25</td>
+            <td>175</td>
+        </tr>
+        <tr>
+            <td>4000</td>
+            <td>34</td>
+            <td>238</td>
+        </tr>
+        <tr class="even">
+            <td>5000</td>
+            <td>43</td>
+            <td>301</td>
+        </tr>
+        <tr>
+            <td>6000</td>
+            <td>51</td>
+            <td>357</td>
+        </tr>
+        <tr class="even">
+            <td>7000</td>
+            <td>60</td>
+            <td>420</td>
+        </tr>
+        <tr>
+            <td>8000</td>
+            <td>69</td>
+            <td>483</td>
+        </tr>
+        <tr class="even">
+            <td>9000</td>
+            <td>77</td>
+            <td>539</td>
+        </tr>
+        <tr>
+            <td>10000</td>
+            <td>86</td>
+            <td>602</td>
+        </tr>
+        <tr class="even">
+            <td>11000</td>
+            <td>95</td>
+            <td>665</td>
+        </tr>
+        <tr>
+            <td>12000</td>
+            <td>103</td>
+            <td>721</td>
+        </tr>
+        <tr class="even">
+            <td>13000</td>
+            <td>112</td>
+            <td>784</td>
+        </tr>
+        <tr>
+            <td>14000</td>
+            <td>120</td>
+            <td>840</td>
+        </tr>
+        <tr class="even">
+            <td>15000</td>
+            <td>129</td>
+            <td>903</td>
+        </tr>
+        <tr>
+            <td>16000</td>
+            <td>138</td>
+            <td>966</td>
+        </tr>
+        <tr class="even">
+            <td>17000</td>
+            <td>146</td>
+            <td>1022</td>
+        </tr>
+        <tr>
+            <td>18000</td>
+            <td>155</td>
+            <td>1085</td>
+        </tr>
+        <tr class="even">
+            <td>19000</td>
+            <td>164</td>
+            <td>1148</td>
+        </tr>
+        <tr>
+            <td>20000</td>
+            <td>172</td>
+            <td>1204</td>
+        </tr>
+        <tr class="even">
+            <td>21000</td>
+            <td>181</td>
+            <td>1267</td>
+        </tr>
+        <tr>
+            <td>22000</td>
+            <td>190</td>
+            <td>1330</td>
+        </tr>
+        <tr class="even">
+            <td>23000</td>
+            <td>198</td>
+            <td>1386</td>
+        </tr>
+        <tr>
+            <td>24000</td>
+            <td>207</td>
+            <td>1449</td>
+        </tr>
+        <tr class="even">
+            <td>25000</td>
+            <td>216</td>
+            <td>1512</td>
+        </tr>
+        <tr>
+            <td>26000</td>
+            <td>224</td>
+            <td>1568</td>
+        </tr>
+        <tr class="even">
+            <td>27000</td>
+            <td>233</td>
+            <td>1631</td>
+        </tr>
+        <tr>
+            <td>28000</td>
+            <td>241</td>
+            <td>1687</td>
+        </tr>
+        <tr class="even">
+            <td>29000</td>
+            <td>250</td>
+            <td>1750</td>
+        </tr>
+        <tr>
+            <td>30000</td>
+            <td>259</td>
+            <td>1813</td>
+        </tr>
+        <tr class="even">
+            <td>31000</td>
+            <td>267</td>
+            <td>1869</td>
+        </tr>
+        <tr>
+            <td>32000</td>
+            <td>276</td>
+            <td>1932</td>
+        </tr>
+        <tr class="even">
+            <td>33000</td>
+            <td>285</td>
+            <td>1995</td>
+        </tr>
+        <tr>
+            <td>34000</td>
+            <td>293</td>
+            <td>2051</td>
+        </tr>
+        <tr class="even">
+            <td>35000</td>
+            <td>302</td>
+            <td>2114</td>
+        </tr>
+        <tr>
+            <td>36000</td>
+            <td>311</td>
+            <td>2177</td>
+        </tr>
+        <tr class="even">
+            <td>37000</td>
+            <td>319</td>
+            <td>2233</td>
+        </tr>
+        <tr>
+            <td>38000</td>
+            <td>328</td>
+            <td>2296</td>
+        </tr>
+        <tr class="even">
+            <td>39000</td>
+            <td>336</td>
+            <td>2352</td>
+        </tr>
+        <tr>
+            <td>40000</td>
+            <td>345</td>
+            <td>2415</td>
+        </tr>
+        <tr class="even">
+            <td>41000</td>
+            <td>354</td>
+            <td>2478</td>
+        </tr>
+        <tr>
+            <td>42000</td>
+            <td>362</td>
+            <td>2534</td>
+        </tr>
+        <tr class="even">
+            <td>43000</td>
+            <td>371</td>
+            <td>2597</td>
+        </tr>
+        <tr>
+            <td>44000</td>
+            <td>380</td>
+            <td>2660</td>
+        </tr>
+        <tr class="even">
+            <td>45000</td>
+            <td>388</td>
+            <td>2716</td>
+        </tr>
+        <tr>
+            <td>46000</td>
+            <td>397</td>
+            <td>2779</td>
+        </tr>
+        <tr class="even">
+            <td>47000</td>
+            <td>406</td>
+            <td>2842</td>
+        </tr>
+        <tr>
+            <td>48000</td>
+            <td>414</td>
+            <td>2898</td>
+        </tr>
+        <tr class="even">
+            <td>49000</td>
+            <td>423</td>
+            <td>2961</td>
+        </tr>
+        <tr>
+            <td>50000</td>
+            <td>432</td>
+            <td>3024</td>
+        </tr>
+    </table>
+
+</body>
+</html>
+
+

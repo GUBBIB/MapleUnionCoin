@@ -1,0 +1,79 @@
+body {
+    font-family: 'Noto Sans Korean';
+
+}
+
+h1 {
+    text-align:center;
+    font-size:35px;
+}
+
+.h3_center {
+    text-align:center;
+}
+
+.brown_color {
+    color:brown;
+}
+
+table {
+    margin:auto;
+}
+
+table, th, td { 
+    border:1px solid #E6E6E6; 
+    border-collapse: collapse;
+}
+
+.even {
+    background-color:#f7f7f7;
+}
+
+th, td {
+    width:25%;
+    text-align:center;
+    color:#666666;
+}
+
+.subTitle{
+    text-align:left;
+    font-size:19px;
+    font-weight:bold;
+}
+
+button {
+    width:200px;
+    margin:auto;
+    display:block
+}
+
+div {
+    text-align:center;
+    font-size:large;
+}
+
+input {
+    display: inline-block;
+}
+
+#input {
+    width: 300px;
+    height: 50px;
+    font-size:25px;
+
+}
+
+#Btn {
+    width: 100px;
+    height: 55px;
+    font-size:25px;
+
+}
+
+#inputDiv {
+    text-align:center;
+}
+
+div {
+    font-size:25px;
+}
